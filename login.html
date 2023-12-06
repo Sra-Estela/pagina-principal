@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login</title>
+    <style>
+        * {
+            font-family:Arial, Helvetica, sans-serif;
+            color: rgb(3, 0, 0);
+        }
+        body {
+            background-image: url("Imagens(2)\\fundo.jpg");
+        }
+        .conteiner {
+            display: flex;
+            background: rgba(121, 118, 118, 0);
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .caixa {
+            width: 1100px;
+            height: 618px;
+            display: flex;
+            margin: 30px;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 25px 25px 25px 25px;
+        }
+        .box-1 {
+            width: 100%;
+            height: 618px;
+            display: flex;
+            background: rgb(31, 30, 30);
+            border-radius: 5px;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-content: stretch;
+            justify-content: flex-end
+
+        }
+        .box-2 {
+            margin: 40px 10px 10px 10px;
+            background: rgb(31, 30, 30);
+        }
+        .box-2 h1 {
+            padding: 20px;
+            font-size: 22px;
+            font-weight: bolder;
+            display: flex;
+            color: rgb(255, 255, 255);
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        .infeite-a {
+            margin: 10px;
+            height: 10px;
+            width: 10px;
+            border: 2px solid red;
+            border-radius: 10px;
+            background: red;
+        }
+        .infeite-b {
+            display: inline-flex;
+            font-size: 18px;
+            flex-direction: column;
+        }
+        .sucessor {
+            display: flex;
+        }
+        .sucessor p {
+            color: white;
+            margin: 10px;
+            font-size: 16px;
+        }
+        .sucessor a {
+            color: red;
+        }
+        .infeite-b button {
+            margin: 10px;;
+            height: 14px;
+            width: 14px;
+            background: rgba(0, 0, 0, 0);
+            border: 1px solid red;
+        }
+        .infeite-b #d {
+            padding: 0px;
+            margin: 5px;
+        }
+        .dados {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .dados p {
+            color: white;
+            margin: 0;
+        }
+        .login {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: center;
+        }
+        .login input {
+            width: 220px;
+            height: 20px;
+            border: 2px solid red;
+            border-radius: 5px;
+            padding: 7px 45px;
+            background: rgba(97, 97, 97, 0.281);
+        }
+        #nome {
+            background-image: url("Imagens(2)\\avatar.png");
+            background-repeat: no-repeat;
+            background-position: 5.5px;
+            background-size: 2.55em;
+        }
+        #email {
+            background-image: url("Imagens(2)\\arroba.png");
+            background-repeat: no-repeat;
+            background-position: 5px;
+            background-size: 3em;
+        }
+        #senha {
+            background-image: url("Imagens(2)\\senha.png");
+            background-repeat: no-repeat;
+            background-position: 10px;
+            background-size: 2em;
+        }
+        .cadastro {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            height: 40px;
+            width: 290px;
+            border: 1px solid rgb(61, 61, 61);
+            border-radius: 30px;
+            background-image: url("Imagens(2)\\fundo(1).png");
+            font-family: Arial;
+            font-weight: bolder;
+            color: rgb(255, 255, 255);
+        }
+        @media screen and (max-width: 100px) {
+            .conteiner {
+                display: flex;
+            }
+            .bem-vindo {
+                display: flex;
+            }
+        }
+        .bem-vindo {
+            position: relative;
+            width: 900px;
+            display: block;
+            background: rgb(112, 27, 27);
+            border-radius: 5px 0px 0px 5px;
+            font-size: 20px;
+        }
+        .mensagem {
+            width: 480px;
+            height: 498px;
+            padding: 130px 130px 5px 130px;
+            position: relative;
+        }
+        .mensagem h1 {
+            font-size: 40px;
+            font-weight: bolder;
+            color: white;
+            margin-bottom: 25px;
+        }
+        .mensagem p {
+            width: 420px;
+            font-size: 20px;
+            color: rgb(182, 182, 182);
+        }
+        .mensagem button {
+            height: 40px;
+            width: 150px;
+            border: 1px solid black;
+            border-radius: 30px;
+            background: rgb(32, 31, 31);
+            font-family: Arial;
+            font-weight: bolder;
+            cursor: pointer;
+        }
+        .mensagem a {
+            text-decoration: none;
+            color: white;
+        }
+        .mensagem #Home {
+            display: flex;
+            margin-top: 130px;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="caixa">
+            <div class="box-1">
+                <div class="bem-vindo">
+                    <div class="mensagem">
+                        <h1>Bem-vindo!<br> É um prazer conhecê-lo!</h1>
+                        <p>Você pode registrar seus dados para pular esta etapa. Salve os nossos cookies para entrar no nosso site, sem precisar preencher os dados.</p>
+                        <button><a href="index.html">RETORNAR</a></button>
+                    </div>
+                </div>
+                <div class="box-2">
+                    <div class="infeite-a"></div>
+                    <h1>Crie uma conta, <br> para ser notificado de todas as novidades.</h1>
+                    <div class="login">
+                        <input id="nome" placeholder="nome"><br>
+                        <input id="email" placeholder="email"><br>
+                        <input id="senha" placeholder="senha"><br>
+                        <div class="infeite-b">
+                            <div class="dados">
+                                <button></button>
+                                <p>Lembrar meus dados</p>
+                            </div>
+                        </div>
+                        <button class="cadastro">CADASTAR-SE</button>
+                        <div class="sucessor">
+                            <p id="d">Esqueci minha <a>senha</a></p>
+                            <p id="d">Já tenho uma <a>conta</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
